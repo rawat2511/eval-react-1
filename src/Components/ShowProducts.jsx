@@ -25,7 +25,7 @@ const ShowProducts = ({ data }) => {
               <tr>
                   <td>{id}</td>
                   <td>{title}</td>
-                  <td>{cost}</td>
+                  <td>Rs.{cost}</td>
                   <td>
                       <img style={style} src={image} alt={title} />
                   </td>

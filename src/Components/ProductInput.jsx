@@ -71,9 +71,13 @@ const ProductInput = () => {
               <label style={{fontWeight: "bold", fontSize: "18px"}} htmlFor="cost">Cost :</label>
               <input onChange={settingData} type="number" name="cost" id="cost" placeholder='Cost'/>
           </Wrapper>
-          <Wrapper>
+          {/* <Wrapper>
               <label style={{fontWeight: "bold", fontSize: "18px"}} htmlFor="image">Image :</label>
               <input onChange={onImageChange} type="file" name="image" id="image" />
+          </Wrapper> */}
+          <Wrapper>
+              <label style={{fontWeight: "bold", fontSize: "18px"}} htmlFor="image">Image :</label>
+              <input onChange={settingData} type="text" name="image" id="image" placeholder='ImageURL' />
           </Wrapper>
           <Wrapper>
               <label style={{fontWeight: "bold", fontSize: "18px"}} >Categories :</label>
