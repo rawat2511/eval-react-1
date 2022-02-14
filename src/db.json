@@ -1,11 +1,40 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "laptop",
-      "cost": 50000,
-      "image": "",
-      "category": ["vegetables", "fruits", "provisions"]
+      "category": [
+        "vegetables"
+      ],
+      "title": "asdf",
+      "cost": "4",
+      "image": "blob:http://localhost:3000/fd22fa5e-3409-461a-9887-d2b98d3afdb3",
+      "id": 1
+    },
+    {
+      "category": [
+        "fruits"
+      ],
+      "cost": "34",
+      "title": "erwr",
+      "image": "blob:http://localhost:3000/43d10e0a-14c1-481b-be39-fc88df63092d",
+      "id": 2
+    },
+    {
+      "category": [
+        "fruits"
+      ],
+      "title": "dafs",
+      "cost": "88",
+      "image": "blob:http://localhost:3000/b49173cd-7cca-4530-8b03-416ad47ec237",
+      "id": 3
+    },
+    {
+      "category": [
+        "fruits"
+      ],
+      "image": "blob:http://localhost:3000/9a1c6341-2c2f-4762-a257-f67cd02cc736",
+      "title": "i",
+      "cost": "8",
+      "id": 4
     }
   ]
 }

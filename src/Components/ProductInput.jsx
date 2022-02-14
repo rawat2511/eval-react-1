@@ -46,6 +46,19 @@ const ProductInput = () => {
       console.log(data);
   }
 
+  const addDataToJson = (e) => {
+      fetch("http://localhost:8000/products", {
+          method: "POST",
+          headers: {
+              "Content-Type" : "application/json"
+          },
+          body: JSON.stringify(data)
+      }).
+      then((res) => res.json() )
+      .then(res => console.log("Response = ", res))
+      .catch(err => console.log(err)); 
+  }
+
   return (
     <MainWrapper>
       <form>
@@ -70,6 +83,7 @@ const ProductInput = () => {
               <label htmlFor="provisions">Provisions</label>
               <input onChange={addCategory} type="checkbox" name="provisions" id="provisions" />
           </Wrapper>
+          <input onClick={addDataToJson} type="submit" value="ADD ITEM" />
       </form>
     </MainWrapper>
   )
