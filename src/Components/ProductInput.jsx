@@ -47,6 +47,7 @@ const ProductInput = () => {
   }
 
   const addDataToJson = (e) => {
+    //   e.preventDefault();
       fetch("http://localhost:8000/products", {
           method: "POST",
           headers: {

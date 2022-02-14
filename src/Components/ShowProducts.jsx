@@ -10,8 +10,8 @@ const ShowProducts = ({ data }) => {
     }
 
   return (
-    <div style={{margin: "0px auto"}}>
-      <table>
+    <div style={{margin: "0px auto", border: "1px solid black"}}>
+      <table border="1" style={{margin: "0px auto"}}>
           <tr>
             <th>Id</th>
             <th>Title</th>
@@ -23,13 +23,13 @@ const ShowProducts = ({ data }) => {
       {
           data.map(({id, title, cost, image, category}) => 
               <tr>
-                  <th>{id}</th>
-                  <th>{title}</th>
-                  <th>{cost}</th>
-                  <th>
+                  <td>{id}</td>
+                  <td>{title}</td>
+                  <td>{cost}</td>
+                  <td>
                       <img style={style} src={image} alt={title} />
-                  </th>
-                  <th>{category[0]}</th>
+                  </td>
+                  <td>{category[0]}</td>
               </tr>
           )
       }
