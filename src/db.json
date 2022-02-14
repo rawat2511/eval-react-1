@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "laptop",
+      "cost": 50000,
+      "image": "",
+      "category": ["vegetables", "fruits", "provisions"]
+    }
+  ]
+}
